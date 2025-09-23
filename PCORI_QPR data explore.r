@@ -49,7 +49,7 @@ total_jak <- tibble(drugs_used = c("total_jak", "total_jak", "total_jak", "total
 #bind
 ann_drug_plus <- bind_rows(drug_ann_dat2, total_jak)
 
-# Plot with total_jak
+# Plot with total_jak and cyclosporine
 ann_drug_plus %>%
   ggplot(aes(x = year, y = n, color = drugs_used)) +
   geom_line() +
@@ -84,16 +84,18 @@ drug_ann_dat_per2 %>%
        color = "Drugs Used") +
   theme_minimal()
 
-# add total_jak to period 2
-total_jak2 <- tibble(drugs_used = c("total_jak", "total_jak", "total_jak", "total_jak"),
-                    year = c(2021,  2022, 2023, 2024),
-                    n = c(76,  90,  151,  209))
+# add total_jak and cyclo to period 2
+total_jak2 <- tibble(drugs_used = c("total_jak", "total_jak", "total_jak", "total_jak",
+                "cyclosporine", "cyclosporine", "cyclosporine", "cyclosporine"),
+                    year = c(2021, 2022, 2023, 2024, 2021, 2022, 2023, 2024),
+                    n = c(76,  90,  151,  209, 37, 31, 26, 43))
+
 #bind
 ann_drug_plus2 <- bind_rows(drug_ann_dat_per2, total_jak2)
 
 # plot with total jak for period 2
 # NOTE - need to subtract first line
-# NOTE need to add Cyclo to plot
+# NOTE need to add Cyclo to plot#done
 # rerder  legend with total jak before each jak
 ann_drug_plus2 %>%
   ggplot(aes(x = year, y = n, color = drugs_used)) +
