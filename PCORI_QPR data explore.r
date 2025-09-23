@@ -2,6 +2,12 @@ library(tidyverse)
 library(readxl)
 library(janitor)
 
+# Reference on guidelines out of date
+# https://academic.oup.com/intqhc/article-abstract/18/3/165/1786412
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC4216254/ 
+# https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1384245
+# GOOGLE origin of "medical guidelines are out of date by the time they are published"
+# 
 # Load data
 ann_dat<- read_xlsx("fd2396_ASUC_final_report.xlsx", sheet = "Table_1",  skip =7) %>%
   purrr::set_names("Characteristics", "Year_2024", "PctSD_2024", "Year_2023", "PctSD_2023", "Year_2022", "PctSD_2022", "Year_2021", "PctSD_2021") %>%
