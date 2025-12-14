@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Draft Manuscript PCORI QPR</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="PCORI_QPR_files/libs/clipboard/clipboard.min.js"></script>
+<script src="PCORI_QPR_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="PCORI_QPR_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="PCORI_QPR_files/libs/quarto-html/popper.min.js"></script>
+<script src="PCORI_QPR_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="PCORI_QPR_files/libs/quarto-html/anchor.min.js"></script>
+<link href="PCORI_QPR_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="PCORI_QPR_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="PCORI_QPR_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="PCORI_QPR_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="PCORI_QPR_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Draft Manuscript PCORI QPR</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>While guidelines are frequently out of date by the time they are published, it is important to review published guidelines in relation to what physicians are actually doing to treat patients. A recent ACG guideline on ulcerative colitis was published in 2025, which included an extensive section on the treatment of Acute Severe Ulcerative Colitis (ASUC). This guideline recommends first line intravenous corticosteroids, with rescue if needed with 2nd line infliximab or cyclosporine after evaluation after 72 hours of treatment.</p>
+<p>We compared this guidance with what is actually being done for patients with ASUC at 62 PCORNet centers around the US. PCORnet is a national network of medical systems, funded by the Patient Centered Outcomes Research Institute (PCORI), that enables insights from high-quality health data from centers across the US.</p>
+<p>We hypothesized that (1) advanced therapies are being used as first line therapy upon ASUC hospitalization, (2) the use of cyclosporine relative to infliximab for ASUC rescue is quite low, and (3) the use of first line and rescue JAK inhibitors is on the rise, and for first-line ASUC therapy, may approach the usage rate of infliximab.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>We aquired data from 62 PCORNet centers as part of a Query in Preparation for Research in August 2025, covering 2021-2024. Per PCORNet policy, any cells with fewer than 11 patients are reported as “&lt;11” to minimize the risk of inadvertently making patients identifiable.</p>
+<p>For the purposes of this administrative data query at 62 PCORNet sites, ASUC was defined as a hospital admission with a primary diagnosis of ulcerative colitis and receiving steroids within the first 48 hours of admission. The final report provides counts aggregated across 62 DataMarts. Four calendar-year cohorts were created coinciding with an inpatient ASUC Dx in the years 2021-2024. The Health Event of Interest (HEI) for all cohorts is the earliest qualifying inpatient UC Dx in in EI or IP care setting a calendar year for years 2021-2024. Patients were allowed to qualify for more than one calendar-year cohort, but not for more than one admission for ASUC per year. The first admission in a calendar year was chosen for the annual cohort. Age was calculated on the date of the HEI, and is binned by decade of age.</p>
+<p>Queries evaluated whether tofacitinib, upadacitinib, infliximab, or cyclosporine were used in the first 14 days after hospital admission, and divided this time period into first-line therapy (in days 0-2) and maintenance or rescue therapy (days 3-14) for the JAK inhibitors and infliximab. Additionally, all cohorts were characterized for colectomy surgery in the year following the HEI. Electronic Health Record (EHR) data may not capture all elements of a patient care within a given health system. As a result, misclassification may occur and data should be interpreted with this limitation in mind.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="descriptive-table-1" class="level3">
+<h3 class="anchored" data-anchor-id="descriptive-table-1">Descriptive Table 1</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="jctlkdjqdm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jctlkdjqdm table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#jctlkdjqdm thead, #jctlkdjqdm tbody, #jctlkdjqdm tfoot, #jctlkdjqdm tr, #jctlkdjqdm td, #jctlkdjqdm th {
+  border-style: none;
+}
+
+#jctlkdjqdm p {
+  margin: 0;
+  padding: 0;
+}
+
+#jctlkdjqdm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#jctlkdjqdm .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#jctlkdjqdm .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#jctlkdjqdm .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#jctlkdjqdm .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#jctlkdjqdm .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#jctlkdjqdm .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#jctlkdjqdm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#jctlkdjqdm .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#jctlkdjqdm .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#jctlkdjqdm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#jctlkdjqdm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#jctlkdjqdm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#jctlkdjqdm .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#jctlkdjqdm .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jctlkdjqdm .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#jctlkdjqdm .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#jctlkdjqdm .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#jctlkdjqdm .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jctlkdjqdm .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#jctlkdjqdm .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jctlkdjqdm .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#jctlkdjqdm .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jctlkdjqdm .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jctlkdjqdm .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jctlkdjqdm .gt_left {
+  text-align: left;
+}
+
+#jctlkdjqdm .gt_center {
+  text-align: center;
+}
+
+#jctlkdjqdm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#jctlkdjqdm .gt_font_normal {
+  font-weight: normal;
+}
+
+#jctlkdjqdm .gt_font_bold {
+  font-weight: bold;
+}
+
+#jctlkdjqdm .gt_font_italic {
+  font-style: italic;
+}
+
+#jctlkdjqdm .gt_super {
+  font-size: 65%;
+}
+
+#jctlkdjqdm .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#jctlkdjqdm .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#jctlkdjqdm .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#jctlkdjqdm .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#jctlkdjqdm .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#jctlkdjqdm .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#jctlkdjqdm .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#jctlkdjqdm .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#jctlkdjqdm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Characteristics" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Characteristics</th>
+<th id="Y2024" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Y2024</th>
+<th id="Y2023" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Y2023</th>
+<th id="Y2022" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Y2022</th>
+<th id="Y2021" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Y2021</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">Total N</td>
+<td class="gt_row gt_right" headers="Y2024">4,901 ()</td>
+<td class="gt_row gt_right" headers="Y2023">4,513 ()</td>
+<td class="gt_row gt_right" headers="Y2022">4,040 ()</td>
+<td class="gt_row gt_right" headers="Y2021">3,912 ()</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Age (Mean, SD)</td>
+<td class="gt_row gt_right" headers="Y2024">47.3 (20.3)</td>
+<td class="gt_row gt_right" headers="Y2023">46.2 (19.7)</td>
+<td class="gt_row gt_right" headers="Y2022">44.6 (18.9)</td>
+<td class="gt_row gt_right" headers="Y2021">43.8 (18.7)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">Sex Female</td>
+<td class="gt_row gt_right" headers="Y2024">2,470 (50 %)</td>
+<td class="gt_row gt_right" headers="Y2023">2,280 (51 %)</td>
+<td class="gt_row gt_right" headers="Y2022">2,019 (50 %)</td>
+<td class="gt_row gt_right" headers="Y2021">1,987 (51 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Sex Male</td>
+<td class="gt_row gt_right" headers="Y2024">2431 (0.5)</td>
+<td class="gt_row gt_right" headers="Y2023">2233 (0.49)</td>
+<td class="gt_row gt_right" headers="Y2022">2021 (0.5)</td>
+<td class="gt_row gt_right" headers="Y2021">1925 (0.49)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">White</td>
+<td class="gt_row gt_right" headers="Y2024">3,465 (71 %)</td>
+<td class="gt_row gt_right" headers="Y2023">3,243 (72 %)</td>
+<td class="gt_row gt_right" headers="Y2022">2,922 (72 %)</td>
+<td class="gt_row gt_right" headers="Y2021">2,839 (73 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Black or African American</td>
+<td class="gt_row gt_right" headers="Y2024">642 (13 %)</td>
+<td class="gt_row gt_right" headers="Y2023">566 (13 %)</td>
+<td class="gt_row gt_right" headers="Y2022">489 (12 %)</td>
+<td class="gt_row gt_right" headers="Y2021">445 (11 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">Asian</td>
+<td class="gt_row gt_right" headers="Y2024">163 (3 %)</td>
+<td class="gt_row gt_right" headers="Y2023">138 (3 %)</td>
+<td class="gt_row gt_right" headers="Y2022">127 (3 %)</td>
+<td class="gt_row gt_right" headers="Y2021">108 (3 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Multiple Races</td>
+<td class="gt_row gt_right" headers="Y2024">90 (2 %)</td>
+<td class="gt_row gt_right" headers="Y2023">80 (2 %)</td>
+<td class="gt_row gt_right" headers="Y2022">68 (2 %)</td>
+<td class="gt_row gt_right" headers="Y2021">92 (2 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">Race Unknown</td>
+<td class="gt_row gt_right" headers="Y2024">378 (8 %)</td>
+<td class="gt_row gt_right" headers="Y2023">356 (8 %)</td>
+<td class="gt_row gt_right" headers="Y2022">317 (8 %)</td>
+<td class="gt_row gt_right" headers="Y2021">330 (8 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Race Missing</td>
+<td class="gt_row gt_right" headers="Y2024">135 (3 %)</td>
+<td class="gt_row gt_right" headers="Y2023">102 (2 %)</td>
+<td class="gt_row gt_right" headers="Y2022">101 (2 %)</td>
+<td class="gt_row gt_right" headers="Y2021">78 (2 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">Hispanic - No</td>
+<td class="gt_row gt_right" headers="Y2024">3,737 (76 %)</td>
+<td class="gt_row gt_right" headers="Y2023">3,415 (76 %)</td>
+<td class="gt_row gt_right" headers="Y2022">3,128 (77 %)</td>
+<td class="gt_row gt_right" headers="Y2021">3,087 (79 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Hispanic - Yes</td>
+<td class="gt_row gt_right" headers="Y2024">598 (12 %)</td>
+<td class="gt_row gt_right" headers="Y2023">577 (13 %)</td>
+<td class="gt_row gt_right" headers="Y2022">532 (13 %)</td>
+<td class="gt_row gt_right" headers="Y2021">527 (13 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">Hispanic - Unknown</td>
+<td class="gt_row gt_right" headers="Y2024">374 (8 %)</td>
+<td class="gt_row gt_right" headers="Y2023">359 (8 %)</td>
+<td class="gt_row gt_right" headers="Y2022">290 (7 %)</td>
+<td class="gt_row gt_right" headers="Y2021">247 (6 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">Hispanic - Missing</td>
+<td class="gt_row gt_right" headers="Y2024">192 (4 %)</td>
+<td class="gt_row gt_right" headers="Y2023">162 (4 %)</td>
+<td class="gt_row gt_right" headers="Y2022">90 (2 %)</td>
+<td class="gt_row gt_right" headers="Y2021">51 (1 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">ADI Quartile 1 (Higher SES)</td>
+<td class="gt_row gt_right" headers="Y2024">1,795 (37 %)</td>
+<td class="gt_row gt_right" headers="Y2023">1,701 (38 %)</td>
+<td class="gt_row gt_right" headers="Y2022">1,563 (39 %)</td>
+<td class="gt_row gt_right" headers="Y2021">1,533 (39 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">ADI Quartile 2</td>
+<td class="gt_row gt_right" headers="Y2024">1,029 (21 %)</td>
+<td class="gt_row gt_right" headers="Y2023">900 (20 %)</td>
+<td class="gt_row gt_right" headers="Y2022">807 (20 %)</td>
+<td class="gt_row gt_right" headers="Y2021">811 (21 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">ADI Quartile 3</td>
+<td class="gt_row gt_right" headers="Y2024">1,031 (21 %)</td>
+<td class="gt_row gt_right" headers="Y2023">959 (21 %)</td>
+<td class="gt_row gt_right" headers="Y2022">828 (20 %)</td>
+<td class="gt_row gt_right" headers="Y2021">796 (20 %)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Characteristics">ADI Quartile 4 (Lower SES)</td>
+<td class="gt_row gt_right" headers="Y2024">712 (15 %)</td>
+<td class="gt_row gt_right" headers="Y2023">685 (15 %)</td>
+<td class="gt_row gt_right" headers="Y2022">588 (15 %)</td>
+<td class="gt_row gt_right" headers="Y2021">591 (15 %)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Characteristics">ADI - Missing</td>
+<td class="gt_row gt_right" headers="Y2024">334 (7 %)</td>
+<td class="gt_row gt_right" headers="Y2023">268 (6 %)</td>
+<td class="gt_row gt_right" headers="Y2022">254 (6 %)</td>
+<td class="gt_row gt_right" headers="Y2021">181 (5 %)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>Cases of ASUC - how many 4901 unique, how many with methylprednisolone 3744, prednisone,1632 (significant overlap/conversion to oral) in 2024</p></li>
+<li><p>What is colectomy rate at same hospital within 2, 90, or 365 days of HEI admission?</p>
+<p>d0-2 is 82/4901</p>
+<p>d3 - 90 is 167/4901</p>
+<p>d 91-365 is 62/4901</p></li>
+</ol>
+<p>4. How many total received IFX 372, Cyclo 43 in 2024</p>
+<p>5. How many received IFX rescue (d 3-14)? 351, Upa 168, tofa 41 (total JAK 209 - note up to 130 of JAK may be continuation of first line Rx) - 560 between JAKi and IFX. Relatively - Cyclo is 43/603 - 7% of rescue</p>
+<p>6. Was IFX used first line - in 146, tofa - 20, Upa 110 (total JAKi 130). First line JAKi is being used, as is first line IFX.</p>
+<ol start="7" type="1">
+<li><p>What is the rate of change in first line therapy use 2021-2024?</p>
+<p>Rising fast, rising proportion of JAK</p>
+<p>Period 1 (Days 0-2)</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="per1_ann_drug.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li><p>What is the rate of change in 2nd line (rescue) therapy in 2021-2024</p>
+<p>Stagnant cyclo, stable slowly rising IFX, rapidly rising JAKi (though many may be continuing dosing from 1st line)</p>
+<p>Period 2 (Days 3-14)</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="per2_ann_drug.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>Guidelines say - steroids first line, consider rescue with Cyclo of IFX JAKi not ready for use.</p>
+<p>No specific mention of first line</p>
+<p>But IFX is known to leak in ASUC - documented leak measurable in stool. Early anti-IFX abs and low trough levels are common in ASUC JAKi are small molecules, not proteins, so no leak, no abs</p>
+<section id="what-is-actually-being-done-in-centers-around-the-us" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-actually-being-done-in-centers-around-the-us">What is actually being done in centers around the US?</h3>
+<p>Both IFX and JAKi are being used as first line therapy in a minority of patients</p>
+<p>Rising use of JAKi first line, approaching IFX use</p>
+<p>Cyclo use is very low, either for first line or rescue, &lt; 1% of patients</p>
+<p>Colectomy rates are low in this dataset</p>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<p>Administrative data, misclassification possible</p>
+<p>Data only from 62 PCORNet centers, may not be generalizable, but generally reflects the demographics of the US population</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
